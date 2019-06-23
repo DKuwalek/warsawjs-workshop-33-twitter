@@ -19,16 +19,22 @@ export default {
             ]
         };
     },
-    mounted() {
+    async mounted() {
         console.log("app.vue is ready");
         const url = 'http://localhost:3000/tweets';
-        fetch(url)
-            .then( (response) => {
-                return response.json()
-            })
-            .then((tweets) => {
-                this.tweets = tweets;
-            });
+
+        //Async way
+        const response = await fetch(url);
+        const tweets = await response.json();
+        this.tweets = tweets;
+
+        // fetch(url)
+        //     .then( (response) => {
+        //         return response.json()
+        //     })
+        //     .then((tweets) => {
+        //         this.tweets = tweets;
+        //     });
     }
 };
 </script>
