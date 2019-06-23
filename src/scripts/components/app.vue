@@ -7,7 +7,7 @@
 <script>
 import TweetList from '@/components/tweet-list';
 export default {
-    name: "app",
+    name: "App",
     components: {
         TweetList
     }
