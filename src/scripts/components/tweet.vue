@@ -8,7 +8,7 @@
 // Ecma script modules Export default oznacza ze epxportujemy
 <script>
 export default {
-    name: "tweet"
+    name: "Tweet"
 }
 </script>
 
