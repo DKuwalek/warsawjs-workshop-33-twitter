@@ -32,6 +32,7 @@ export default {
                 console.log(err);
             }
 
+            // Oldies which we have replaced with 2 await lines
             // fetch(url)
             //     .then( (response) => {
             //         return response.json()
@@ -43,7 +44,7 @@ export default {
 
     },
     async mounted() {
-        console.log("app.vue is ready");
+        // console.log("app.vue is ready");
         this.tweets = await this.fetchTweets();
     }
 };

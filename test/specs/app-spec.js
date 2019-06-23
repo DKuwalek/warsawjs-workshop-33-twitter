@@ -3,6 +3,7 @@ import { assert } from "chai";
 import { mount } from "@vue/test-utils";
 import TweetList from '@/components/tweet-list';
 import  App  from '@/components/app';
+// import nock from "nock";
 
 
 suite('App', () => {
@@ -20,14 +21,33 @@ suite('App', () => {
         });
         assert.ok(wrapper.contains(TweetList));
     });
-    it('XXX should render single TweetList item', () => {
+    it('should fetch tweets via HTTP request', async () => {
         const wrapper = mount(App, {
             stubs: {
-                "b-card": true,
-                "b-card-text": true
+                Tweet : true
             }
         });
-        assert.ok(wrapper.contains(TweetList));
+        console.log("wrapper.vm");
+        // console.log(wrapper.vm);
+        // podkreśla poniewaz wrapper jest prostego typu komponentu Vue
+        assert.isFunction(wrapper.vm.fetchTweets);
+
+        const ft = wrapper.vm.fetchTweets;
+
+        // const response = await ft();
+
+        // console.log(response); //
+
+        // nock("http://localhost:3000")
+        //     .get('/tweets')
+        //     .reply(200, [
+        //         { id: 'id', body: 'body' }
+        //     ]);
+
+        // const response = await ft();
+        // console.log(response); // JSON
+        // assert.lengthOf(response, 1);
+
+
     });
-    
 });
