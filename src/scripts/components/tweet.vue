@@ -1,7 +1,7 @@
 <template>
     <div class="tweet">
         <img src="https://m.media-amazon.com/images/S/aplus-media/vc/e0636a6f-30e8-4e58-9005-6a234e4feaa4._CR0,0,300,400_PT0_SX300__.png" alt="El Coco">
-        Kokos zielony i słodki
+        Kokos słodki i zielony
         </div>
 </template>
 
