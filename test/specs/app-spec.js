@@ -20,4 +20,14 @@ suite('App', () => {
         });
         assert.ok(wrapper.contains(TweetList));
     });
+    it('XXX should render single TweetList item', () => {
+        const wrapper = mount(App, {
+            stubs: {
+                "b-card": true,
+                "b-card-text": true
+            }
+        });
+        assert.ok(wrapper.contains(TweetList));
+    });
+    
 });

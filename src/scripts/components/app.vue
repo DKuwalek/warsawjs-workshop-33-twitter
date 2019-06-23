@@ -19,22 +19,32 @@ export default {
             ]
         };
     },
+    methods: {
+        async fetchTweets() {
+            const url = "http://localhost:3000/tweets";
+
+            try {
+                //Async way
+                const response = await fetch(url);
+                return  await response.json();
+                // this.tweets = tweets;
+            } catch (err) {
+                console.log(err);
+            }
+
+            // fetch(url)
+            //     .then( (response) => {
+            //         return response.json()
+            //     })
+            //     .then((tweets) => {
+            //         this.tweets = tweets;
+            //     });
+        }
+
+    },
     async mounted() {
         console.log("app.vue is ready");
-        const url = 'http://localhost:3000/tweets';
-
-        //Async way
-        const response = await fetch(url);
-        const tweets = await response.json();
-        this.tweets = tweets;
-
-        // fetch(url)
-        //     .then( (response) => {
-        //         return response.json()
-        //     })
-        //     .then((tweets) => {
-        //         this.tweets = tweets;
-        //     });
+        this.tweets = await this.fetchTweets();
     }
 };
 </script>
