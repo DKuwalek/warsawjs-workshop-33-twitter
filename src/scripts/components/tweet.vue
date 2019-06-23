@@ -2,7 +2,7 @@
     <b-card
         :img-src="tweet.author.avatar_url"
         :title="tweet.author.name"
-        :sub-title="created_time"
+        :sub-title="created_time | myDate"
         class="m-2"
         img-left>
         {{tweet.body}}
@@ -11,6 +11,7 @@
 
 // Ecma script modules Export default oznacza ze epxportujemy
 <script>
+import { formatDatingo } from "@/helpers/my-date";
 export default {
     name: "Tweet",
     props: {
@@ -22,8 +23,12 @@ export default {
     },
     computed: {
         created_time() {
-            const d = new Date(this.tweet.created_time);
-            return d.toLocaleString('pl-PL');
+            return formatDatingo(this.tweet.created_time);
+        }
+    },
+    filters : {
+        myDate(value) {
+            return formatDatingo(value);
         }
     }
 };
