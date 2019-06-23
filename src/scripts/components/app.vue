@@ -6,6 +6,7 @@
 
 <script>
 import TweetList from "@/components/tweet-list";
+
 export default {
     name: "App",
     components: {
@@ -14,13 +15,20 @@ export default {
     data() {
         return {
             tweets: [
-                { id: "1", body: "Delicious Coco 1" },
-                { id: "2", body: "Delicious Coco 2" },
-                { id: "3", body: "Delicious Coco 3" },
-                { id: "4", body: "Delicious Coco 4" },
-                { id: "5", body: "Delicious Coco 5" }
+                // http://localhost:3000/tweets
             ]
         };
+    },
+    mounted() {
+        console.log("app.vue is ready");
+        const url = 'http://localhost:3000/tweets';
+        fetch(url)
+            .then( (response) => {
+                return response.json()
+            })
+            .then((tweets) => {
+                this.tweets = tweets;
+            });
     }
 };
 </script>

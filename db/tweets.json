@@ -1,0 +1,54 @@
+{
+    "tweets": [
+      {
+        "id": "3eb949e3-62f3-516a-878c-3fa1b439e79a",
+        "created_time": "Fri Sep 07 2018 10:53:52 GMT+0200 (Central European Summer Time)",
+        "author": {
+          "id": "50e971d7-28dc-54df-9e57-d03fe474b36a",
+          "name": "Willa Rau",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/imsoper/128.jpg"
+        },
+        "body": "Hegnifu ge uvmohim gevpej wujoto atanudnas ba javju emsu bumoac zunusozuk mi ula tam zoruzot."
+      },
+      {
+        "id": "b26f581c-0dd7-541e-8ce9-42589443beb3",
+        "created_time": "Sat Apr 20 2019 20:46:45 GMT+0200 (Central European Summer Time)",
+        "author": {
+          "id": "825290fe-b246-5133-9d8b-74a41928e76d",
+          "name": "Marcel Connelly",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/thehacker/128.jpg"
+        },
+        "body": "Te zaw oduziktot fodo tivu wa lef mal nojerupuf sago efa goapeuk ufhe kijlete onguuge."
+      },
+      {
+        "id": "d0b84718-1e28-5465-8dd5-b653f8624230",
+        "created_time": "Wed Jun 12 2019 01:18:17 GMT+0200 (Central European Summer Time)",
+        "author": {
+          "id": "7159093c-a2b8-59d6-9d98-b8b6a4246fde",
+          "name": "Buck Krajcik",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/necodymiconer/128.jpg"
+        },
+        "body": "Zam weha lak ako cuuvipa avdaf wouhjip azsi zekivva nej tehco hojfacat to zikeruc."
+      },
+      {
+        "id": "2a99ee9f-997c-5ebd-9cc2-270cb32e5680",
+        "created_time": "Sun Dec 02 2018 07:06:18 GMT+0100 (Central European Standard Time)",
+        "author": {
+          "id": "a3c76412-d125-510d-9829-e9e3a1b0d727",
+          "name": "Hilton Yost",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/a_brixen/128.jpg"
+        },
+        "body": "Asuon ozu rotwur tos wovmaba be zaode puvlew obhol uworalef noljuvfi awhebdu awnikol nenokra."
+      },
+      {
+        "id": "a24c2508-d0b3-523d-bd83-06d815006392",
+        "created_time": "Sun Nov 04 2018 03:47:01 GMT+0100 (Central European Standard Time)",
+        "author": {
+          "id": "61f46a91-13cf-5708-bc40-8e6c68907f1c",
+          "name": "Wyman Kemmer",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/victordeanda/128.jpg"
+        },
+        "body": "Tu etsu depatok sejdi hap pajiz gi bo hizad waadowa tebkibzij ezuge mimugovid ba ovi."
+      }
+    ]
+}
